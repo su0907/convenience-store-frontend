@@ -15,7 +15,7 @@ function LoginPage() {
       const data = await login(email, password);
       saveToken(data.token);
       saveUserInfo(data.name, data.role);
-      navigate("/dashboard");
+      navigate("/staff");
     } catch (err) {
       setError("이메일 또는 비밀번호가 올바르지 않습니다.");
     }
