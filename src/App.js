@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./pages/auth/LoginPage";
 import Layout from "./components/Layout";
 import StaffPage from "./pages/staff/StaffPage";
+import AttendancePage from "./pages/attendance/AttendancePage";
 
 function App() {
   return (
@@ -11,14 +12,7 @@ function App() {
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/staff" element={<StaffPage />} />
-        <Route
-          path="/attendance"
-          element={
-            <Layout>
-              <div>출퇴근 현황 (준비중)</div>
-            </Layout>
-          }
-        />
+        <Route path="/attendance" element={<AttendancePage />} />
         <Route
           path="/schedule"
           element={
