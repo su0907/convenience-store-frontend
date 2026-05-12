@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./pages/auth/LoginPage";
 import Layout from "./components/Layout";
+import StaffPage from "./pages/staff/StaffPage";
 
 function App() {
   return (
@@ -9,14 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route
-          path="/staff"
-          element={
-            <Layout>
-              <div>직원 관리 (준비중)</div>
-            </Layout>
-          }
-        />
+        <Route path="/staff" element={<StaffPage />} />
         <Route
           path="/attendance"
           element={
