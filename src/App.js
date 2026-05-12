@@ -4,6 +4,7 @@ import LoginPage from "./pages/auth/LoginPage";
 import Layout from "./components/Layout";
 import StaffPage from "./pages/staff/StaffPage";
 import AttendancePage from "./pages/attendance/AttendancePage";
+import SchedulePage from "./pages/schedule/SchedulePage";
 
 function App() {
   return (
@@ -13,14 +14,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/staff" element={<StaffPage />} />
         <Route path="/attendance" element={<AttendancePage />} />
-        <Route
-          path="/schedule"
-          element={
-            <Layout>
-              <div>스케줄 관리 (준비중)</div>
-            </Layout>
-          }
-        />
+        <Route path="/schedule" element={<SchedulePage />} />
         <Route
           path="/salary"
           element={
