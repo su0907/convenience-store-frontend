@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import StaffPage from "./pages/staff/StaffPage";
 import AttendancePage from "./pages/attendance/AttendancePage";
 import SchedulePage from "./pages/schedule/SchedulePage";
+import SalaryPage from "./pages/salary/SalaryPage";
 
 function App() {
   return (
@@ -15,14 +16,7 @@ function App() {
         <Route path="/staff" element={<StaffPage />} />
         <Route path="/attendance" element={<AttendancePage />} />
         <Route path="/schedule" element={<SchedulePage />} />
-        <Route
-          path="/salary"
-          element={
-            <Layout>
-              <div>급여 관리 (준비중)</div>
-            </Layout>
-          }
-        />
+        <Route path="/salary" element={<SalaryPage />} />
         <Route
           path="/handover"
           element={
