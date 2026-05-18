@@ -6,6 +6,7 @@ import StaffPage from "./pages/staff/StaffPage";
 import AttendancePage from "./pages/attendance/AttendancePage";
 import SchedulePage from "./pages/schedule/SchedulePage";
 import SalaryPage from "./pages/salary/SalaryPage";
+import HandoverPage from "./pages/handover/HandoverPage";
 
 function App() {
   return (
@@ -17,14 +18,7 @@ function App() {
         <Route path="/attendance" element={<AttendancePage />} />
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/salary" element={<SalaryPage />} />
-        <Route
-          path="/handover"
-          element={
-            <Layout>
-              <div>인수인계 (준비중)</div>
-            </Layout>
-          }
-        />
+        <Route path="/handover" element={<HandoverPage />} />
         <Route
           path="/notice"
           element={
